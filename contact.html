@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+  </head>
+  <body>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="Contact Bg.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+              </div>
+              <div class="app-contact">CONTACT INFO: <br><br>
+                <a href="https://www.linkedin.com/in/prathamaggarwal/"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
+            </div>            
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+              <!-- Replace with your Access Key -->
+              <input type="hidden" name="access_key" value="dd41ec2e-0a1b-4489-bcaa-4941b50b98b3">
+          
+              <!-- Form Inputs. Each input must have a name="" attribute -->
+              <input class="app-form-control" placeholder="NAME" value="CYBER GEEKS">
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="CONTACT NO">
+                </div>
+                <div class="app-form-group message">
+                  <input class="app-form-control" placeholder="MESSAGE">
+                </div>
+                <!-- hCaptcha Spam Protection -->
+                  <div class="h-captcha" data-captcha="true"></div>
+              </div> <br>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">CANCEL</button>
+                  <button class="app-form-button">SEND</button>
+                </div>
+          </form>
+          <!-- Required for hCaptcha -->
+          <script src="https://web3forms.com/client/script.js" async defer></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </body>
+</html>
